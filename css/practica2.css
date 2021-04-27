@@ -1,0 +1,92 @@
+body{
+    background-color: rgba(248, 242, 242, 0.68);
+}
+#top-menu{
+    background: linear-gradient(to bottom, rgb(19, 18, 18),rgb(95, 93, 93));
+    height: 2.5em;
+}
+#top-menu p{
+    text-align: right;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    padding-top: 1em;
+    margin-right: 1em;
+    font-size: larger;
+    color: white;
+}
+img[title="logo"]{
+    width: 30%;
+    height: 30%;
+    margin: auto;
+    display: block;
+}
+
+#menu{
+    display: flex;
+    justify-content: center; 
+   
+  
+}
+#menu li a {
+    text-decoration: none;
+    font-size: x-large;    
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+   
+}
+#menu li{
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    height: 2.5em;
+    position: sticky;
+    top: 0px; 
+
+   
+}
+
+#menu li:hover{
+    background-color:white;
+    
+}
+
+/* esta sección para hacer el slider automatico de las fotos*/
+.slider{
+    width: 90%;
+    height: 75%;
+    margin: auto;
+    overflow: hidden;
+
+}
+.slider ul{
+    display: flex;
+    width: 400%;
+    padding: 0;
+    animation: cambio 20s infinite alternate;
+
+}
+
+.slider li{
+    width: 100%;
+    list-style: none;
+}
+.slider img{
+    width: 100%;
+    height: 85%;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0;}
+    20% {margin-left: 20;}
+    
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+
+}
