@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Eva">
+    <meta name="keywords" content="zapatiilas,online,tienda,nike,jordan,vans,converse">
+    <title>Eva's shop</title>
+    <link rel="stylesheet" href="css/practica2.css" media="all">
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <a id="inicio"></a>
+
+        <div id="top-menu">
+            <p>¡Envío gratis a partir de 80€!</p>
+        </div>
+        <img src="img/logo3.png" title="logo" alt="logo">
+
+        <nav>
+            <ul id="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#nosotros">Sobre nosotros</a></li>
+                <li><a href="tallas" target="_self">Guía de tallas</a></li>
+                <li><a href="contactanos.html" target="_self">Contáctanos</a></li>
+                    
+            </ul>
+         </nav>
+    </header>
+    <section>
+        <div class="preguntas">
+         <p>¿Preguntas sobre los pedidos?</p>
+         <p>¿Información sobre los productos?</p>
+         <p>Cualquier duda que tenga no dude en preguntarnos</p><br/>
+         <p><b>!Escribanos y responderemos lo antes posible!</b></p>
+       
+        </div>
+        <form action="https://evatf01.github.io/pagina-zapatillas/" method="GET" class="form">
+            <label for="nombre">Nombre *</label> <br>
+            <input name='nombre' type='text' id="nombre" placeholder="Nombre " required><br>
+            <br>
+            <label for="email">Email*</label><br>
+            <input  type='email' id="email" name="email" required><br/>
+            <label>Introduce tu telefono (9 dígitos)</label><br/>
+            <input type="tel" name="telefono" pattern="[0-9]{9}"><br/>
+            
+            <label for="asunto">Asunto</label><br>
+            <input type="text" maxlength="100" id="asunto" name="asunto"><br/>
+            <label for="mensaje">Escriba su mensaje</label><br/>
+            <textarea id="mensaje" name="mensaje" rows="10" cols="50"></textarea>
+            <br/><input type="submit" value="Enviar">
+        </form>
+   
+    </section>
+    
+</body>
+</html>
