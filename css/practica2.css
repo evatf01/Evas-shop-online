@@ -210,6 +210,8 @@ img[title="licencia"]{
 img[title="tallas"]{
     margin: auto;
     display: block;
+    width: 40%;
+    height: 30%;
 }
 
 .abajo-tallas{
@@ -221,12 +223,3 @@ img[title="tallas"]{
     color: white;
 }
 
-/*movil vertical*/
-@media (max-width: 575.98px)and (orientation:portrait) {
-    body{ background-color: rgba(230, 221, 221, 0.68);}
-}
-
-/*tablet vertical*/
-@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
-    body{ background-color: rgba(230, 221, 221, 0.68);}
-}
