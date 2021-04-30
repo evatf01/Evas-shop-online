@@ -30,9 +30,6 @@ img[title="logo"]{
     display: flex;
     justify-content: center; 
     background-color: rgb(30, 28, 28);
-    position: sticky;
-    top: 0; 
-    z-index: 50;
     width: 100%;
     
 }
@@ -83,7 +80,7 @@ img[title="logo"]{
 }
 
 @keyframes cambio{
-    0% {margin-left: 0;}
+    5% {margin-left: 0;}
     20% {margin-left: 20;}
     
     25% {margin-left: -100%;}
@@ -123,12 +120,20 @@ img[title="logo"]{
     text-align: center;
     font-weight: bolder;
 }
+
+.tabla2 tr img:hover {
+-webkit-transform: rotateY(180deg);
+-webkit-transform-style: preserve-3d;
+transform: rotateY(180deg);
+transform-style: preserve-3d;}
+
 .abajo{
     background-color: rgba(19, 18, 18, 0.891);
     padding-left: 5%;
     padding-right: 60%;
     padding-top: 0;
     color: white;
+    
 }
 h2.nosotros{
     font-size: x-large;
@@ -157,7 +162,71 @@ h2.nosotros{
     font-size: large;
 }
 .form{
-    float: right;
-    margin-right: 5%;
+    position: absolute;
+    right: 25%;
 }
 
+
+img[title="licencia"]{
+    width: 20%;
+    height: 10%;
+    position: relative;
+    left: 200%;
+}
+
+.abajo-contacta{
+    margin-top: 40%;
+    background-color: rgba(19, 18, 18, 0.891);
+    padding-left: 5%;
+    padding-right: 60%;
+    padding-top: 0;
+    color: white;
+}
+
+.abajo-nosotros{
+    font-size: x-large;
+    font-weight: bolder;
+    
+}
+
+.abajo-redes{
+    width: 40%;
+    margin-left: 200%;
+    
+}
+.nosotros-twt{
+    position: relative;
+    left: 200%;
+
+}
+.nosotros-gmail{
+    margin-left: 200%;
+}
+
+.nosotros-gmail p{
+    color: grey;
+}
+
+img[title="tallas"]{
+    margin: auto;
+    display: block;
+}
+
+.abajo-tallas{
+    margin-top: 20%;
+    background-color: rgba(19, 18, 18, 0.891);
+    padding-left: 5%;
+    padding-right: 60%;
+    padding-top: 0;
+    color: white;
+}
+
+/*movil vertical*/
+@media (max-width: 575.98px)and (orientation:portrait) {
+    body{ background-color: rgba(230, 221, 221, 0.68);}
+}
+
+/*tablet vertical*/
+@media (min-width: 576px) and (max-width: 991.98px) and (orientation:portrait) {
+    body{ background-color: rgba(230, 221, 221, 0.68);}
+}
