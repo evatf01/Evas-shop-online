@@ -149,8 +149,6 @@ img[title="logo"]{
 }
 /*para que al pasar por encima el ratón la imagen se gire 180 grados*/
 .tabla2 tr img:hover {
--webkit-transform: rotateY(180deg);
--webkit-transform-style: preserve-3d;
 transform: rotateY(180deg);
 transform-style: preserve-3d;
 }
@@ -252,9 +250,19 @@ img[title="licencia"]{
 img[title="tallas"]{
     margin: auto;
     display: block;
-    width: 40%;
-    height: 30%;    
+    width: 50%;
+    height: 35%;    
+    border-radius: 3%;
+    box-shadow: 3px 3px 3px 5px rgb(74, 65, 65);
+    
 }
+
+h2.tallas{
+    text-align: center;
+    font-weight: bolder;
+}
+
+
 /*parte de abajo de las tallas*/
 .abajo-tallas{
     margin-top: 20%;
