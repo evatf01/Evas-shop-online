@@ -8,15 +8,15 @@ hr{
 }
 /*TOP-MENU: CONTENEDOR GRIS ARRIBA DE LA PAGINA WEB*/
 #top-menu{
-    background: linear-gradient(to bottom, rgb(19, 18, 18),rgb(95, 93, 93));
-    height: 3%;
+    background:rgb(30, 28, 28);
+    height: 2em;
+    top: 0;
 }
 
 #top-menu p{  /*Parrafo dentro del contenedor*/
     text-align: right;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bold;
-    padding-right: 1em;
     font-size: larger;
     color: white;
 }
@@ -29,6 +29,25 @@ hr{
     font-weight: bold;
     font-size: larger;
 }
+img[title="lupa"]{
+
+    width: 3em;
+    height: 3em;
+    float: right;
+    position: absolute;
+    top: 13.5%;
+    right: 7%;
+}
+img[title="bolsa"]{
+
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top: 13.5%;
+    right: 2.5%;
+}
+
+
 /*cambia de color el enlace al pasar el raton*/
 #top-menu a:hover{
     color: rgb(181, 86, 86);
@@ -37,10 +56,11 @@ hr{
 
 /*imagen que aparece arriba del menu*/
 img[title="logo"]{
-    width: 30%;
-    height: 30%;
-    margin: auto;
-    display: block; /*estas dos reglas para que la imagen se posicione en el centro*/
+    width: 20%;
+    height: 35%;
+    float: left;
+    margin-left: 5%;
+  
 }
 /*------*/
 
@@ -48,8 +68,9 @@ img[title="logo"]{
     display: flex;               /*estas dos primeras reglas hacen que el menu este centrado y esté "estirado"*/
     justify-content: center; 
     background-color: rgb(30, 28, 28);
-    width: 100%;
-    
+    float: right;    /*para que esté en el centro*/
+    width: 60%;
+    margin-right: 10%;
 }
 #menu li a {
     text-decoration: none; /*para que los enaces no tengan decoracion*/
@@ -63,7 +84,7 @@ img[title="logo"]{
     display: inline-block; /*para que la lista esté en una linea*/
     width: 25%;
     text-align: center;
-    height: 2.5em;
+    height: 5em;
     
 }
 
@@ -168,13 +189,18 @@ transform-style: preserve-3d;
     color: white;
     
 }
+
+
+
 h2.nosotros{ 
     font-size: x-large;
     font-weight: bolder;
 }
 .redes{
-    width: 40%;
-    margin-left: 200%;
+   
+    position: relative;
+    left: 200%;
+
     
 }
 .twt{ /*boton de twitter*/
@@ -199,15 +225,25 @@ img[title="licencia"]{
 /*para que el texto aparezca a la izquierda*/
 
 .preguntas{
-    float: left;
-    margin-left: 5%;
-    font-size: large;
+   position: absolute;
+   left: 15%;
+   top:40%;
+   float: left;
 }
+
+.preguntas p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    font-weight: bold;
+}
+
 
 /*para que el formulario aparezca a la derecha a la misma altura de las preguntas*/
 .form{
     position: absolute;
-    right: 20%;
+    right: 15%;
+    top: 25%
+
 }
 
 /*parte de abajo de "contactanos"*/
@@ -236,6 +272,13 @@ img[title="licencia"]{
     left: 200%;
 
 }
+img[title="redes"]{
+    width: 35%;
+    height: 20%;
+    position: relative;
+    left: 200%;
+}
+
 .nosotros-gmail{
     margin-left: 200%;
 }
